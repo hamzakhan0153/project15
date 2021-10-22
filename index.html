@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Write a JavaScript program to convert a given days to hours and minutes.
+      </title>
+      <style>
+        h1{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      </style>
+      <h1>
+        Write a JavaScript program to convert a given days to hours and minutes.
+      </h1>
+      <script>
+        var hour = 47.5;
+      var day = 0;
+      var minute = parseInt((hour % 1)*60);
+      if (hour>24){
+          day = parseInt(hour / 24);
+          hour = parseInt(hour % 24);
+      }else{
+          hour = parseInt(hour);
+      }
+      alert ("The Day: " +  day);
+      alert("The Hour: " +hour);
+      alert("The Minutes : " +minute);
+      </script>
+</body>
+</html>
